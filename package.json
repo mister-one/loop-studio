@@ -1,0 +1,12 @@
+{
+  "name": "loop-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Loop Studio is an open-source, local runtime for model-powered events and scheduled tasks.">
+  <title>Loop Studio · Local AI workflows</title>
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+  <header class="shell top">
+    <a class="brand" href="./"><span aria-hidden="true">∞</span> Loop Studio</a>
+    <nav aria-label="Project"><a href="#how">How it works</a><a class="source" href="#install">Get the code</a></nav>
+  </header>
+  <main>
+    <section class="shell hero">
+      <div class="intro">
+        <p class="label"><span></span> LOCAL AI WORKFLOWS</p>
+        <h1>Run AI workflows on your machine.</h1>
+        <p>Publish events, schedule recurring tasks, and connect the model you want to use. Loop Studio brings it all into one local workspace.</p>
+        <a class="button" href="#install">Get started</a>
+      </div>
+      <div class="diagram" aria-label="Example workflow from incoming event to model output">
+        <div class="diagram-item"><span class="marker">✦</span><div><b>Event arrives</b><code>inbox.received</code></div></div>
+        <div class="diagram-item"><span class="marker">∞</span><div><b>Loop runs</b><code>Summarize and suggest a next step</code></div></div>
+        <div class="diagram-item"><span class="marker">≡</span><div><b>Result recorded</b><code>inbox.summarized</code></div></div>
+      </div>
+    </section>
+    <section id="how" class="shell details">
+      <h2>How it works</h2>
+      <div class="columns">
+        <article><h3>Publish an event</h3><p>Emit a named event with a JSON payload from the workspace or HTTP API. Set an interval when you want Loop to emit it automatically.</p></article>
+        <article><h3>Connect a model</h3><p>Pick a topic and give your loop an instruction. Use the demo processor or point Loop at an OpenAI-compatible endpoint such as a local Ollama server.</p></article>
+        <article><h3>Inspect the result</h3><p>Review inputs, outputs, and failures in the console. Publish the model response as a new event when another loop needs to pick it up.</p></article>
+      </div>
+    </section>
+    <section id="install" class="shell install">
+      <div><h2>Start Loop Studio</h2><p>Get the source, open its folder, and run Loop with Node.js 22 or later. Open the local URL printed in your terminal.</p></div>
+      <div><pre><code>npm start</code></pre><div class="repo-links"><!-- REPOSITORY_LINKS --><a class="source" href="#how">Explore the workflow</a><!-- /REPOSITORY_LINKS --></div></div>
+    </section>
+  </main>
+  <footer class="shell bottom"><strong>Loop Studio</strong><span>MIT licensed</span></footer>
+</body>
+</html>

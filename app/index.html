@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Loop Studio is a local workspace for model-powered event automation.">
+  <title>Loop Studio</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="logo" aria-hidden="true">∞</span><span>Loop<span class="brand-sub">Studio</span></span></a>
+    <nav id="nav" aria-label="Workspace"></nav>
+    <div class="side-bottom">
+      <a class="project-link" href="/project/" target="_blank" rel="noopener">About Loop</a>
+      <div class="connection"><span class="dot" id="connection-dot"></span><span><strong id="connection">Connecting</strong><small id="address"></small></span></div>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <span class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Overview</strong></span>
+      <button type="button" class="primary" data-action="event"><span aria-hidden="true">+</span> Emit event</button>
+    </header>
+    <main id="main" aria-busy="true">
+      <p class="empty">Connecting to Loop Studio…</p>
+    </main>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div id="dialog-body"></div>
+  </dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
+</body>
+</html>
